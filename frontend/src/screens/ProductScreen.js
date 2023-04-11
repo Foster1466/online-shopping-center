@@ -1,16 +1,35 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link, useParams} from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card, ListGroupItem } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import products from '../products'
+import Loader from '../components/Loader'
+import Message from '../components/Message'
+import {useDispatch, useSelector} from 'react-redux'
+import {listProductDetails} from '../actions/productActions'
 
 function ProductScreen({match}) {
     const product_id = useParams();
-    const product = products.find((p) => p._id==product_id.id)
-  return (
+    
+    const dispatch = useDispatch()
+    const productDetails = useSelector(state => state.productDetails)
+    const {loading, error, product} = productDetails
+
+    useEffect(() => {
+        dispatch(listProductDetails(product_id.id))
+
+
+    }, [dispatch])
+
+
+    return (
     <div>
         <Link to={'/'} className='btn btn-light my-3'>Go Back</Link>
-        <Row>
+        {loading ?
+            <Loader />
+            : error
+                ? <Message variant='danger'>{error}</Message>
+            :(
+                <Row>
             <Col md={6}>
                 <Image src={product.image} alt={product.name} fluid />
             </Col>
@@ -65,8 +84,11 @@ function ProductScreen({match}) {
                 </Card>
             </Col>
         </Row>
+            )
+        }
+        
     </div>
-  )
+    )
 }
 
 export default ProductScreen
