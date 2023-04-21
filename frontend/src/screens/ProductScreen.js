@@ -110,7 +110,7 @@ function ProductScreen({}) {
                             <div className='text-center' >
                             <Button 
                                 onClick={addToCartHandler}
-                                className='btn-block col-11' 
+                                className='w-100' 
                                 disabled={product.countInStock==0} 
                                 type='button'>
                                     Add to Cart

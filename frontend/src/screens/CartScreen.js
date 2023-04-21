@@ -28,7 +28,7 @@ function CartScreen() {
   }
 
   const checkoutHandler = () => {
-    navigate('/login?redirect=shipping')
+    navigate('/login?redirect=/shipping')
   }
   return (
     <Row>
@@ -95,7 +95,7 @@ function CartScreen() {
           <div className='text-center'>
             <Button 
               type='button'
-              className='btn-block col-10'
+              className='w-100'
               disabled={cartItems.length===0}
               onClick={checkoutHandler}
             >
