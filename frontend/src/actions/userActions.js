@@ -18,6 +18,8 @@ import {USER_LOGIN_REQUEST,
     USER_UPDATE_PROFILE_FAIL,
     USER_UPDATE_PROFILE_RESET,} from '../constants/userConstants'
 
+import {ORDER_LIST_MY_RESET} from '../constants/orderConstants'
+
 
 /* Frontend auth is gonna take in the email and password, then make an api call then it will get the 
 jwt token and then register the user */
@@ -63,6 +65,7 @@ export const logout = () => (dispatch) => {
 
     dispatch({type: USER_LOGOUT})
     dispatch({type: USER_DETAILS_RESET})
+    dispatch({type: ORDER_LIST_MY_RESET})
 
 }
 
