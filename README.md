@@ -34,6 +34,7 @@ Ramazon is a complex feature rich Full-Stack ecommerce website with a comprehens
 
 #### Design
 Following is the database design for the website
+![Database design](https://user-images.githubusercontent.com/67507979/235410327-aa013198-bf71-472d-b83f-e0bab92cf089.png)
 
 
 Tech Stack:
