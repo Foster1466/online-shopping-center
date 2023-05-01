@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-0w_+d+6vg$nnhe_nthpcs6uk!u8en0o1t1khbk-)pkq&a=m1t2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ramazon-app.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ramazon-app.herokuapp.com']
 
 
 # Application definition
