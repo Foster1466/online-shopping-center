@@ -25,13 +25,13 @@ Link: https://ramazon-app.herokuapp.com/
 * Python
 * JavaScript
 * HTML/CSS
-* Bootstrap, React-Bootstrap
 
 ### Framework
 * React (Frontend)
 * Django (Backend)
 
 ### Libraries
+* Bootstrap, React-Bootstrap
 * React-Redux for state management
 * React libraries: 
     * axios 
