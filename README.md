@@ -13,7 +13,7 @@ Link: https://ramazon-app.herokuapp.com/
 
 * Designed, developed tables using Django class models and migrated data over to AWS RDS & PostgreSQL
 
-* Utilized AWS S3 for scalable database deployment and Heroku with Gunicorn for seamless Web app deployment
+* Utilized AWS S3 for object storage and Heroku with Gunicorn for seamless Web app deployment
 
 # Final Product
 ![Product](https://user-images.githubusercontent.com/67507979/235411222-151aafea-408a-4c4c-ab97-8e83cb525abb.png)
